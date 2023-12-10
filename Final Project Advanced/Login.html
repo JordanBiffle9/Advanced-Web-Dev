@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+	<html>
+
+		<!-- Initialize the html login file -->
+
+		<head>
+    		<meta charset="utf-8"/>  
+    		<title>Login Page</title>   
+    		<link rel="stylesheet" href="css/Login.css">
+		</head>
+
+		<!-- this area displays the login fields and sends data to the login.js file -->
+
+		<body>
+			<form>
+				<h1> Enter in your username and password to log in. </h1><br>
+				<input class="input" type = "text" id = "Login_Username" placeholder= "type username"><br><br>
+				<input class="input" type = "password" id = "Login_Password" placeholder= "type password"><br><br>
+				<button class="btn" type = "button" onclick="getInfo()">Login</button>
+				<button class="btn" type = "button" onclick="createAccount()">Create account</button>
+			</form>
+		</body>
+
+		<!-- link to the login.js file -->
+
+		<script src = "js/Login.js" charset= "utf-8"></script>
+	</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html id="html">
+
+	<!-- This is the initialization part of the html file -->
+
+	<head>
+    	<meta charset="utf-8"/>  
+    	<title>Final Project</title>   
+    	<link rel="stylesheet" href="css/FinalProject.css">
+	</head>
+	<body id="body">
+
+		<!-- this declares the dropdown menus as well as the overall title of the page -->
+
+		<h1>Legends of Alchemy Reborn Website</h1><br>
+
+		<main class="Widgets">
+
+			<label for="Widgets_Subgroups">Choose a culture to learn more about</label>
+
+			<select name="Subgroups" id="Widgets_Subgroups" onchange="CalculateOutput()">
+				<option value="1">Ancient Council</option>
+				<option value="2">Runic Warriors</option>
+				<option value="3">Ancient Monsters</option>
+				<option value="4">Lost Sages</option>
+				<option value="5">Ancient Objects</option>
+				<option value="6">New Sages</option>
+			</select><br>
+
+			
+
+			<label for="Widgets_Elements">Choose an Element to learn more about</label>
+
+			<select name="Elements" id="Widgets_Elements" onchange="CalculateOutput()">
+				<option value="1">Fire</option>
+				<option value="2">Water</option>
+				<option value="3">Forest</option>
+				<option value="4">Wind</option>
+				<option value="5">Sand</option>
+				<option value="6">Ice</option>
+				<option value="7">Dream</option>
+				<option value="8">Poison</option>
+				<option value="9">Shadow</option>
+				<option value="10">Psychic</option>
+				<option value="11">Dark</option>
+				<option value="12">Demon</option>
+			</select><br><br>
+
+		</main>
+
+		<!-- This area defines the subgroup information display -->
+
+		<main class="Subgroups">
+			<h2 id="Subgroups_Title"></h2><br>
+			<p id="Subgroups_Info"></p><br>
+
+			<p><img src="images/CouncilWars.png" id="Subgroups_Image" width="150"></p><br>
+		</main>
+
+		<!-- this area defines the element information display -->
+
+		<main class="Elementgroups">
+			<h2 id="Element_Title"></h2><br>
+			<p id="Element_Info"></p><br>
+
+		</main>
+
+		<!-- this area defines the individual information display -->
+
+		<main class="Individuals">
+
+			<h2 id="Individuals_Title">Character History</h2><br>
+			<p id="Individuals_Info"></p><br>
+
+		</main>
+
+		<!-- Javascript file link and footer -->
+
+		<script src="js/FinalProject.js"></script>
+		<footer>
+			<p>&copy; L.O.A.R 2023</p>
+    		<p>By: Jordan Biffle, Shuting Sorrells, Jenyffer Castro Pablo</p>
+  		</footer>
+	</body>
+</html>
